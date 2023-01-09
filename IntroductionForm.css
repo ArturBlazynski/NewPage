@@ -1,0 +1,135 @@
+.card {
+  height: 1131px;
+  width: 690px;
+  padding: 34px 71px 75px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  background: linear-gradient(180deg, #FFDBBC 0%, #FFEA7F 100%);
+  Line-height: 10px;
+  box-sizing: border-box;
+  margin: auto;
+}
+
+.container {
+  position: relative;
+  display: block;
+  padding-left: 25px;
+  padding-top: 3px;
+}
+
+.container__input {
+  position: absolute;
+  height: 16px;
+  width: 16px;
+  box-sizing: border-box;
+  height: 10px;
+  opacity: 0;
+
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 16px;
+  width: 16px;
+  border: 1px solid black;
+}
+
+.container__input:checked~.checkmark {
+  background-color: #2196F3;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.container__input:checked~.checkmark:after {
+  display: block;
+}
+
+.container .checkmark:after {
+  left: 4.5px;
+  top: 1px;
+  width: 4px;
+  height: 9px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+
+input {
+  background: linear-gradient(180deg, #FFDBBC 0%, #FFEA7F 100%);
+}
+
+#dropdown,
+#dropdown1 {
+  background: linear-gradient(180deg, #FFDBBC 0%, #FFEA7F 100%);
+
+}
+
+.dropdown {
+  font-size: 16px;
+}
+
+p {
+  font-size: 16px;
+}
+
+textarea {
+  width: 100%;
+  height: 200px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 1px solid #383C3E;
+  background: linear-gradient(180deg, #FFDBBC 0%, #FFEA7F 100%);
+  resize: none;
+  Line-height: 11px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  font-size: 16px;
+}
+
+.field__input {
+  margin-top: 10px;
+}
+
+::placeholder {
+  color: black;
+}
+
+.button {
+  background: linear-gradient(180deg, #FFDBBC 0%, #FFEA7F 100%);
+  margin-top: 10px;
+  width: 548px;
+  height: 21.5px;
+}
+
+fieldset {
+
+  border: none;
+  line-height: 20px;
+}
+legend{
+  text-decoration: none;
+}

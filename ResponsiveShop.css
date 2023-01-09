@@ -1,0 +1,71 @@
+.products {
+  width: 100%;
+  height: 100%;
+  padding: 25px;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(3, auto);
+  justify-content: space-around;
+  gap: 40px 30px;
+  box-sizing: border-box;
+  background: linear-gradient(180deg, #FFDBBC 0%, #FFEA7F 100%);
+}
+
+.products-item {
+  width: 250px;
+  height: 320px;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background: #8DADFF;
+  font-family: 'Montserrat', sans-serif;
+  box-sizing: border-box;
+  border-radius: 10px;
+  padding-bottom: 20px;
+}
+
+.products-item img {
+  width: 210px;
+  height: 210px;
+  border-radius: 10px;
+  display: flex;
+  margin: auto;
+}
+
+.product-name {
+  font-size: 16px;
+
+}
+
+.product-price {
+  font-size: 14px;
+
+}
+
+.products-item:hover {
+  scale: 1.1;
+
+}
+
+.products-item:active {
+  border: 3px solid black;
+
+}
+
+/* mobilki na desktop min-width
+desktop na mobile to max-width */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
